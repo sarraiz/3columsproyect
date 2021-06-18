@@ -1,0 +1,109 @@
+body {
+  width: 100%;
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 25px 0;
+}
+
+.column {
+  width: 29%;
+  float: left;
+  padding: 2%;
+}
+
+.column.sedans {
+  background: #E28726;
+  border-radius: 10px 0 0 10px;
+}
+
+.column.suvs {
+  background: #006870;
+}
+
+.column.luxury {
+  background: #004241;
+  border-radius: 0 10px 10px 0;
+}
+
+.column img {
+  margin-bottom: 25px;
+}
+
+.column h1 {
+  font-weight: 700;
+}
+
+.column p {
+  margin-bottom: 65px;
+}
+
+.column a {
+  width: 85px;
+  background: #fff;
+  padding: 10px 30px;
+  display: block;
+  text-decoration: none;
+  border-radius: 25px;
+  border: solid 3px transparent;
+  text-align: center;
+}
+
+.column a:hover {
+  background: transparent;
+  border: solid 3px #fff;
+  width: 85px;
+  padding: 10px 30px;
+  display: block;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.column.sedans a {
+  color: #E28726;
+}
+
+.column.suvs a {
+  color: #006870;
+}
+
+.column.luxury a {
+  color: #004241;
+}
+
+.column.sedans a:hover {
+  color: #fff;
+}
+
+.column.suvs a:hover {
+  color: #fff;
+}
+
+.column.luxury a:hover {
+  color: #fff;
+}
+
+/*****Mediaqueries******/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .column {
+    width: 86%;
+    margin: 0 auto;
+    padding: 6%;
+  }
+
+  .column.sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .column.luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}
