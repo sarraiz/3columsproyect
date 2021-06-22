@@ -1,6 +1,6 @@
 $body-width:100%;
 $container-padding:25px 0;
-$container-max-width:1440px;
+$container-max-width:1280px;
 $container-min-width:375px;
 $margin-center:0 auto;
 $body-font-size:15px;
@@ -10,10 +10,10 @@ $bright-orange:#E28726;
 $dark-cyan:#006870;
 $very-dark-cyan:#004241;
 $font-bolder:700;
-$column-width:29%/*33%*/;
+$column-width:23%/*33%*/;
 $column-width-media:86%/*100%*/;
 $column-float:left;
-$column-padding:2%;
+$column-padding:2% 5%;
 $column-padding-media:6%;
 $font-color:#fff;
 $margin-bottom-img:25px;
@@ -21,6 +21,7 @@ $margin-bottom-paragraph:65px;
 $a-padding:10px 30px;
 $a-width:85px;
 $inherit:transparent;
+$uppercase:uppercase;
 
 body {
     width:$body-width;
@@ -56,9 +57,11 @@ body {
 }
 .column h1 {
     font-weight:$font-bolder;
+    text-transform: $uppercase;
 }
 .column p {
     margin-bottom:$margin-bottom-paragraph;
+    line-height:28px;
 }
 .column a {
     width:$a-width;
